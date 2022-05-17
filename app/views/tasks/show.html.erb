@@ -1,0 +1,11 @@
+<br>
+<h1>Task: <%= @task[:title] %></h1>
+
+<ul>
+  <li><strong>Details:</strong> <%= @task[:details] %></li>
+  <li><strong>Completed: </strong><%= @task[:completed] %></li>
+</ul>
+
+<%= link_to "Edit this task?", edit_task_path %>
+<br>
+<%= link_to "Return to list", tasks_path %>
